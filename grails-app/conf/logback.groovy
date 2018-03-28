@@ -33,11 +33,11 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
             pattern = "%level %logger - %msg%n"
         }
     }
-//    logger("StackTrace", ERROR, ['FULL_STACKTRACE'], false)
+    logger("StackTrace", ERROR, ['FULL_STACKTRACE'], false)
 }
-//root(ERROR, ['STDOUT'])
-logger "LSH3Changed",INFO,['STDOUT'],false
-root(INFO, ['STDOUT'])
-
-logger "LSH3Changed",DEBUG,['STDOUT'],false
-root(DEBUG, ['STDOUT'])
+root(ERROR, ['STDOUT'])
+//logger "LSH3Changed",INFO,['STDOUT'],false
+//root(INFO, ['STDOUT'])
+//
+//logger "LSH3Changed",DEBUG,['STDOUT'],false
+//root(DEBUG, ['STDOUT'])
